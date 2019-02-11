@@ -15,7 +15,7 @@ https.get(requestOptions, function (response) {
     // the callback is invoked when a `data` chunk is received,
     // the data is then passed into my variable appendChunksOfData
     response.on('data', function (data) {
-      appendChunkOfData += data.length;
+      appendChunkOfData += data;
       // console.log(appendChunkOfData + '\n')
     });
   
