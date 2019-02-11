@@ -8,6 +8,6 @@ var requestOptions = {
 function htmlReverse(appendChunkOfData){
   var reverseString = appendChunkOfData.split('').reverse().join('');
   console.log(reverseString);
-}
+};
 
 getModule(requestOptions, htmlReverse);
