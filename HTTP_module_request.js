@@ -5,6 +5,8 @@ var requestOptions = {
   path: '/http-examples/step5.html'
 };
 
-getModule(requestOptions, function(appendChunkOfData){
+function callback(appendChunkOfData){
   console.log(appendChunkOfData);
-});
+}
+
+getModule(requestOptions, callback);
